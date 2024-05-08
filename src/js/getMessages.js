@@ -19,7 +19,7 @@ const prepareMessage = function (message) {
 
   // On retourne le HTML du message
   return `
-  <div class="message${message.author === author && ' is-mine'}">
+  <div class="message${message.author === author ? ' is-mine' : ''}">
     <div class="message-time">${formattedTime}</div>
     <div class="message-user">${message.author}</div>
     <div class="message-text">${message.text}</div>
