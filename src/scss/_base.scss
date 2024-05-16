@@ -5,6 +5,11 @@
 :root {
 }
 
+@font-face {
+  font-family: "nuku";
+  src: url("../asset/nuku1.woff2");
+}
+
 /* ====================================
 // reset rules
 // ==================================== */
@@ -14,6 +19,11 @@
   margin: 0;
   padding: 0;
 }
+
+$primary: #be5224;
+$white: #ffffff;
+$white-hot: #f5e5de;
+$dark: #161616;
 
 html {
   font-size: 16px;
@@ -26,6 +36,9 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  background: url(../asset/background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -42,3 +55,12 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+a.cta {
+  position: absolute;
+  background: $primary;
+  padding: 16px 20px 20px;
+  font-family: "nuku";
+  color: $white;
+  font-size: 27px;
+}

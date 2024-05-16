@@ -2,4 +2,52 @@
   height: 150px;
   border: 1px solid #ccc;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 87vh;
+  padding: 35px 50px;
+
+  .is-mine {
+    align-self: self-end;
+    .message-user {
+      display: none;
+    }
+  }
+}
+
+.message {
+  background: $white;
+  border: 1px solid $dark;
+  width: 370;
+  text-align: center;
+  border-radius: 50%;
+  padding: 50px 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  word-break: break-all;
+
+  .message-time {
+    max-width: 50%;
+    order: 1;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  .message-user {
+    max-width: 50%;
+    order: 0;
+    margin-right: 5px;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  .message-text {
+    width: 100%;
+    order: 2;
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
